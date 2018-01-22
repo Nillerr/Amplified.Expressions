@@ -31,7 +31,14 @@ object[] GetArguments(Expression<Func<object>> expression) {
     return methodCall.Arguments.Select(ExpressionHelper.ResolveValue).ToArray();
 }
 
-var arguments = GetArguments(() => object.Equals(1, "Hello, World!"));
+var input = new {
+    Left = 1,
+    Nested = new {
+        Right = "Hello, World!"
+    }
+};
+
+var arguments = GetArguments(() => object.Equals(input.Left, input.Nested.Right));
 // arguments = new object[2]{ 1, "Hello, World!" }
 // The call to object.Equals(x, y) is not invoked.
 ```
