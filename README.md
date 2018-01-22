@@ -18,6 +18,11 @@ var stringValue = ExpressionHelper.ResolveValue(() => o.ToString());
 var expression = Expression.Constant(5);
 var value = ExpressionHelper.ResolveValue(expression);
 // value = 5
+
+// As extension method
+var expression = Expression.Constant(88.43);
+var value = expression.ResolveValue();
+// value = 88.43
 ```
 
 ### Advanced Examples

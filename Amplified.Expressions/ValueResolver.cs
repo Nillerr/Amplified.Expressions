@@ -387,12 +387,13 @@ namespace Amplified.Expressions
                     break;
                 case ExpressionType.Power:
                     // Power expressions are not natively supported in C#
+                    // We could make a fast-path by using Math.Pow, but is anyone really going to use it?
                     return ResolveCompiledValue(expression);
             }
 
             throw new ArgumentException(ExpressionNotSupported, nameof(expression));
         }
-
+        
         private static object ResolveValueFromTypeBinaryExpression(TypeBinaryExpression expression)
         {
             var operand = expression.Expression.ResolveValue();
@@ -478,8 +479,7 @@ namespace Amplified.Expressions
                     var type = expression.IsLiftedToNull
                         ? Nullable.GetUnderlyingType(expression.Type)
                         : expression.Type;
-                        
-                    // ReSharper disable once AssignNullToNotNullAttribute
+                    
                     return Convert.ChangeType(value, type);
                 }
                 case ExpressionType.UnaryPlus:
