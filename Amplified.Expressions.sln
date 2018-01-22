@@ -4,6 +4,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amplified.Expressions", "Am
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amplified.Expressions.Tests", "Amplified.Expressions.Tests\Amplified.Expressions.Tests.csproj", "{84447C7F-AD3D-45E0-A040-AC82AC10050B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{B11EF8EC-F01F-4021-893F-08D133D17335}"
+ProjectSection(SolutionItems) = preProject
+	README.md = README.md
+	LICENSE = LICENSE
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
