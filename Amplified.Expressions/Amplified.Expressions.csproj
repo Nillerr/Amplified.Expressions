@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.5;net45</TargetFrameworks>
+    <RootNamespace>Amplified.Expressions</RootNamespace>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <IncludeSymbols>True</IncludeSymbols>
+    <Version>1.0.0</Version>
+    <Authors>Nicklas Jensen</Authors>
+    <Company />
+    <Product>Amplified.Expressions</Product>
+    <Description>Provides tools to resolve values in C# expressions.</Description>
+    <Copyright>Nicklas Jensen</Copyright>
+    <PackageLicenseUrl>https://github.com/Nillerr/Amplified.Expressions/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/Nillerr/Amplified.Expressions</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Nillerr/Amplified.Expressions</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Expression,Expressions</PackageTags>
+  </PropertyGroup>
+</Project>
