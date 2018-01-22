@@ -1,6 +1,12 @@
 # Amplified.Expressions
 
+![NuGet](https://img.shields.io/nuget/v/Amplified.Expressions.svg) 
+
 Static expression helpers and extensions with emphasis on fast expression interpretation.
+
+## Installation
+
+The library is available on [NuGet](https://www.nuget.org/packages/Amplified.Expressions).
 
 ## Usage
 
